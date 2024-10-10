@@ -22,6 +22,10 @@ import formRouter from './routes/form.routes.js'
 
 app.use('/api/forms', formRouter);
 
+app.get('/', (req, res) => {
+    res.send("Home page of pyro")
+});
+
 app.use((req, res, next) => {
     res.status(404).json({ message: "Route not found" });
 });
