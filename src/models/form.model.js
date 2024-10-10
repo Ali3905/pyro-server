@@ -53,6 +53,24 @@ const formSchema = new Schema({
     type: String, // URL to the image of age range
     // required: true,
   },
+  age_13_17: {
+    type: Number
+  },
+  age_18_24: {
+    type: Number
+  },
+  age_25_34: {
+    type: Number
+  },
+  age_35_44: {
+    type: Number
+  },
+  age_45_54: {
+    type: Number
+  },
+  age_55: {
+    type: Number
+  },
 }, { timestamps: true });
 
 export const Form = mongoose.model("Form", formSchema, "form");
