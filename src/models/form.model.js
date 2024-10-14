@@ -9,6 +9,9 @@ const formSchema = new Schema({
     type: String,
     required: true,
   },
+  email: {
+    type: String,
+  },
   followers: {
     type: Number,
     required: true,
